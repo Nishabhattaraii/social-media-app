@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Post List
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}"> 
+
+<h1>Welcome to the project</h1>
+<div class="createbtn">
+  <input class="text-area" type="textarea" placeholder="Whats in your mind?" disabled/>
+<a class="btn btn-primary postbtn" href="{% url 'post_create' %}">Create a post</a>
+</div>
+<div class="container">
+  {% for post in posts %}
+    <div class="card" >
+        {% if post.photo %}
+           
+        {% endif %}
+        <div class="card-body">
+          <img src="{{ post.photo.url }}" class="card-img-top" alt="...">
+          <h5 class="card-title">{{ post.user.username }}</h5>
+          <p class="card-text">{{ post.text }}</p>
+          <p>Likes: {{ post.likes.count }}</p>
+          <form method="post" action="{% url 'like_post' post.id %}">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-outline-primary likebtn">Like</button>
+          </form>
+          <h6>Comments:</h6>
+          <ul>
+            {% for comment in post.comments.all %}
+              <li>{{ comment.user.username }}: {{ comment.text }}</li>
+            {% endfor %}
+          </ul>
+          <form method="post" action="{% url 'add_comment' post.id %}">
+              {% csrf_token %}
+              <div class="form-group">
+                  <textarea name="text" class="form-control" placeholder="Add a comment"></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-success commentbtn">Comment</button>
+          </form>
+          {% if post.user == user %}
+            <a href="{% url 'post_edit' post.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'post_delete' post.id %}" class="btn btn-danger">Delete</a>
+          {% endif %}
+        </div>
+      </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   facebook
+{% endblock %}
+
+
+{% block content %}
+<h1>
+ Are you sure you want to delete the post?
+
+</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <button class="btn btn-danger">Yes</button>
+    <a class="btn btn-success" href="{% url 'post_list' %}"> Cancel</a>
+{% endblock %}
