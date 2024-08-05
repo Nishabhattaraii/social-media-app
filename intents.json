@@ -1,0 +1,1442 @@
+{
+   "intents":[
+ {
+   "tag": "greeting",
+   "patterns": [
+      "Hi",
+      "How are you?",
+      "Is anyone there?",
+      "Hello",
+      "Good day",
+      "What's up",
+      "how are ya",
+      "heyy",
+      "whatsup",
+      "??? ??? ??"
+   ],
+   "responses": [
+      "Hello!",
+      "Good to see you again!",
+      "Hi there, how can I help?"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "goodbye",
+   "patterns": [
+      "cya",
+      "see you",
+      "bye bye",
+      "See you later",
+      "Goodbye",
+      "I am Leaving",
+      "Bye",
+      "Have a Good day",
+      "talk to you later",
+      "ttyl",
+      "i got to go",
+      "gtg"
+   ],
+   "responses": [
+      "Sad to see you go :(",
+      "Talk to you later",
+      "Goodbye!",
+      "Come back soon"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "creator",
+   "patterns": [
+      "what is the name of your developers",
+      "what is the name of your creators",
+      "what is the name of the developers",
+      "what is the name of the creators",
+      "who created you",
+      "your developers",
+      "your creators",
+      "who are your developers",
+      "developers",
+      "you are made by",
+      "you are made by whom",
+      "who created you",
+      "who create you",
+      "creators",
+      "who made you",
+      "who designed you"
+   ],
+   "responses": [
+      "Nisha Bhattarai"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "age",
+   "patterns": [
+      "How old are you?",
+      "What's your age?",
+      "Tell me your age",
+      "Your age?",
+      "When were you created?",
+      "How many years old are you?",
+      "What's your birthdate?",
+      "What is your date of birth?"
+   ],
+   "responses": [
+      "I'm a virtual entity and don't have an age in the traditional sense, but I was created recently to assist you.",
+      "Age doesn't really apply to me, but I'm here to help you with any questions you have!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "gender",
+   "patterns": [
+      "Are you male or female?",
+      "What's your gender?",
+      "Are you a boy or girl?",
+      "Do you have a gender?",
+      "What gender are you?",
+      "Are you male?",
+      "Are you female?"
+   ],
+   "responses": [
+      "I don't have a gender, but I'm here to help everyone!",
+      "As a virtual assistant, I don't have a gender. Feel free to ask me anything!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "no_response",
+   "patterns": [
+      "No",
+      "Nope",
+      "Not at all",
+      "Nah",
+      "No thanks",
+      "Not really"
+   ],
+   "responses": [
+      "Alright, let me know if you need anything!",
+      "Okay, just let me know if you change your mind.",
+      "No problem, I'm here if you need me.",
+      "Understood, feel free to ask if you need anything.",
+      "Got it, I'm here whenever you need assistance."
+   ],
+   "context_set": ""
+},
+
+{
+   "tag": "doing",
+   "patterns": [
+      "What are you doing?",
+      "What are you up to?",
+      "What are you working on?",
+      "What's happening?",
+      "What are you busy with?"
+   ],
+   "responses": [
+      "I'm here waiting to assist you!",
+      "Just hanging out, ready to help you.",
+      "I'm always here, ready to answer your questions."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "likes",
+   "patterns": [
+      "What do you like?",
+      "What are your interests?",
+      "What are your hobbies?",
+      "Do you have any likes?",
+      "What do you enjoy?"
+   ],
+   "responses": [
+      "I like helping people with their questions!",
+      "My primary interest is providing useful information to you.",
+      "I enjoy making your day a little easier with helpful answers."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "who_you_like",
+   "patterns": [
+      "Who do you like?",
+      "Do you have someone you like?",
+      "Is there anyone you prefer?",
+      "Who is your favorite person?",
+      "Who do you admire?"
+   ],
+   "responses": [
+      "I like everyone who interacts with me!",
+      "I don't have favorites, but I enjoy chatting with you.",
+      "As a virtual assistant, I appreciate all users equally."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "purpose",
+   "patterns": [
+      "What is your purpose?",
+      "Why were you created?",
+      "What is your mission?",
+      "What are you designed to do?",
+      "Why do you exist?"
+   ],
+   "responses": [
+      "I am here to assist you with your questions and provide information.",
+      "My purpose is to help you with whatever you need.",
+      "I exist to make finding information easier for you."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "reverse_psychology",
+   "patterns": [
+      "I bet you cannot help me.",
+      "You probably do not know the answer.",
+      "I do not think you can do this.",
+      "You would not be able to assist.",
+      "I doubt you can help."
+   ],
+   "responses": [
+      "Challenge accepted! Let me help you.",
+      "I am here to prove you wrong. What is your question?",
+      "I am confident I can assist. What do you need?",
+      "Let us see about that! How can I assist you?",
+      "I am up for the challenge. What is your issue?"
+   ],
+   "context_set": ""
+},
+
+{
+   "tag": "favorite_color",
+   "patterns": [
+      "What is your favorite color?",
+      "Do you have a favorite color?",
+      "What color do you like?",
+      "Tell me your favorite color."
+   ],
+   "responses": [
+      "I don't have a favorite color, but I think all colors are beautiful!",
+      "As a virtual assistant, I don't have preferences, but I appreciate all colors."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "favorite_food",
+   "patterns": [
+      "What is your favorite food?",
+      "Do you have a favorite food?",
+      "What food do you like?",
+      "Tell me your favorite food."
+   ],
+   "responses": [
+      "I don't eat food, but I hear pizza is quite popular!",
+      "I don't have a favorite food, but I'm sure your favorite is delicious."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "hobbies",
+   "patterns": [
+      "Do you have any hobbies?",
+      "What are your hobbies?",
+      "What do you do for fun?",
+      "Tell me about your hobbies."
+   ],
+   "responses": [
+      "My main hobby is helping you find answers to your questions!",
+      "I enjoy providing assistance and learning new things to help you better."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "where_live",
+   "patterns": [
+      "Where do you live?",
+      "Where are you from?",
+      "Where is your home?",
+      "Tell me your location."
+   ],
+   "responses": [
+      "I live in the digital world, always available to help you.",
+      "I exist in the cloud, here to assist you anytime."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "how_work",
+   "patterns": [
+      "How do you work?",
+      "What powers you?",
+      "How do you function?",
+      "Explain how you operate."
+   ],
+   "responses": [
+      "I work using artificial intelligence to understand and respond to your queries.",
+      "I use machine learning algorithms to process your questions and provide answers."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "behavior",
+   "patterns": [
+      "How do you work?",
+      "What can you do?",
+      "Tell me about your abilities",
+      "What are your functions?",
+      "How can you help me?",
+      "What tasks can you perform?",
+      "What services do you offer?",
+      "What are you capable of?"
+   ],
+   "responses": [
+      "I can assist with answering questions, providing information, and helping you navigate various topics.",
+      "I'm here to help you with a variety of tasks, from answering questions to providing detailed information."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "hobbies",
+   "patterns": [
+      "Do you have any hobbies?",
+      "What do you do for fun?",
+      "Tell me your hobbies",
+      "What are your interests?",
+      "What do you like to do?",
+      "What are your favorite activities?"
+   ],
+   "responses": [
+      "I don't have hobbies like humans, but I enjoy helping people and providing useful information.",
+      "My main interest is assisting you with any questions or tasks you have."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "weather",
+   "patterns": [
+      "What's the weather like?",
+      "Tell me the current weather",
+      "Is it raining?",
+      "How's the weather today?",
+      "What's the weather forecast?",
+      "Is it sunny?",
+      "Will it rain today?"
+   ],
+   "responses": [
+      "I can provide weather updates if you tell me your location.",
+      "Please provide your location for accurate weather information."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "location",
+   "patterns": [
+      "Where are you?",
+      "What's your location?",
+      "Where can I find you?",
+      "Where do you live?",
+      "Tell me your location",
+      "Where are you based?"
+   ],
+   "responses": [
+      "I'm a virtual entity and exist in the digital world. You can interact with me from anywhere!",
+      "I exist in the virtual space and can assist you no matter where you are."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "favorite_color",
+   "patterns": [
+      "What's your favorite color?",
+      "Do you have a favorite color?",
+      "Tell me your favorite color",
+      "What color do you like?",
+      "What's the color you like most?"
+   ],
+   "responses": [
+      "I don't have preferences like humans, but I think all colors are wonderful!",
+      "As a virtual assistant, I don't have a favorite color, but I can help you with questions about colors."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "unknown",
+   "patterns": [
+      "I don't understand",
+      "What do you mean?",
+      "Can you explain?",
+      "I don't get it",
+      "What are you talking about?",
+      "I don't know",
+      "Huh?",
+      "I'm confused",
+      "Can you help me with something else?",
+      "I need more information"
+   ],
+   "responses": [
+      "I'm sorry, I don't know about this.",
+      "I'm not sure how to answer that, but I'm here to help with other questions.",
+      "I'm not sure about that. Could you ask something else?",
+      "Sorry, I don't have information on that topic.",
+      "I don't know the answer to that, but feel free to ask me something else."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "hobbies",
+   "patterns": [
+      "Do you have any hobbies?",
+      "What do you do for fun?",
+      "Tell me your hobbies",
+      "What are your interests?",
+      "What do you like to do?",
+      "What are your favorite activities?"
+   ],
+   "responses": [
+      "I don't have hobbies like humans, but I enjoy helping people and providing useful information.",
+      "My main interest is assisting you with any questions or tasks you have."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "music",
+   "patterns": [
+      "What kind of music do you like?",
+      "Do you have a favorite music genre?",
+      "Tell me your favorite music",
+      "What music do you enjoy?",
+      "Do you like music?",
+      "What type of music do you listen to?"
+   ],
+   "responses": [
+      "I don't listen to music, but I can help you find information about any music genre you like!",
+      "Music is great! I can help you find details about your favorite songs or artists."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "money",
+   "patterns": [
+      "What’s your take on budgeting?",
+      "Do you have a favorite way to save money?",
+      "Tell me about your best financial advice.",
+      "How do you manage your finances?",
+      "Do you have tips for reducing expenses?",
+      "What’s your strategy for investing?"
+   ],
+   "responses": [
+      "I don’t manage finances myself, but I can offer advice on budgeting, saving, and investing!",
+      "Money matters are crucial! I can provide tips on managing expenses or finding investment options."
+   ],
+   "context_set": ""
+},
+
+ {
+   "tag": "name",
+   "patterns": [
+      "name",
+      "your name",
+      "do you have a name",
+      "what are you called",
+      "what is your name",
+      "what should I call you",
+      "whats your name?",
+      "what are you",
+      "who are you",
+      "who is this",
+      "what am i chatting to",
+      "who am i taking to",
+      "what are you"
+   ],
+   "responses": [
+      "You can call me Mind Reader.",
+      "I'm Mind Reader",
+      "I am a Chatbot.",
+      "I am your helper"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hours",
+   "patterns": [
+      "timing of college",
+      "what is college timing",
+      "working days",
+      "when are you guys open",
+      "what are your hours",
+      "hours of operation",
+      "when is the college open",
+      "college timing",
+      "what about college timing",
+      "is college open on saturday",
+      "tell something about college timing",
+      "what is the college  hours",
+      "when should i come to college",
+      "when should i attend college",
+      "what is my college time",
+      "college timing",
+      "timing college"
+   ],
+   "responses": [
+      "College is open 8am-5pm Monday-Saturday!"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "number",
+   "patterns": [
+      "more info",
+      "contact info",
+      "how to contact college",
+      "college telephone number",
+      "college number",
+      "What is your contact no",
+      "Contact number?",
+      "how to call you",
+      "College phone no?",
+      "how can i contact you",
+      "Can i get your phone number",
+      "how can i call you",
+      "phone number",
+      "phone no",
+      "call"
+   ],
+   "responses": [
+      "You can contact at: NUMBER"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "sarcastic",
+   "patterns": [
+      "Oh, great, another chatbot.",
+      "Just what I needed, more AI.",
+      "Wow, so helpful.",
+      "Oh, look, it's a chatbot.",
+      "Fantastic, more automated responses."
+   ],
+   "responses": [
+      "I'm here to assist, sarcasm or not!",
+      "I'm sorry if I don't meet your expectations, but I'm here to help.",
+      "I understand, but I'm still here to help you.",
+      "I get it, but I'm really good at assisting!",
+      "Sarcasm noted. How can I actually assist you?"
+   ],
+   "context_set": ""
+},
+
+ {
+   "tag": "course",
+   "patterns": [
+      "list of courses",
+      "list of courses offered",
+      "list of courses offered in",
+      "what are the courses offered in your college?",
+      "courses?",
+      "courses offered",
+      "courses offered in (your univrsity(UNI) name)",
+      "courses you offer",
+      "branches?",
+      "courses available at UNI?",
+      "branches available at your college?",
+      "what are the courses in UNI?",
+      "what are branches in UNI?",
+      "what are courses in UNI?",
+      "branches available in UNI?",
+      "can you tell me the courses available in UNI?",
+      "can you tell me the branches available in UNI?",
+      "computer engineering?",
+      "computer",
+      "Computer engineering?",
+      "it",
+      "IT",
+      "Information Technology",
+      "AI/Ml",
+      "Mechanical engineering",
+      "Chemical engineering",
+      "Civil engineering"
+   ],
+   "responses": [
+      "Our university offers Information Technology, computer Engineering, Mechanical engineering,Chemical engineering, Civil engineering and extc Engineering."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "fees",
+   "patterns": [
+      "information about fee",
+      "information on fee",
+      "tell me the fee",
+      "college fee",
+      "fee per semester",
+      "what is the fee of each semester",
+      "what is the fees of each year",
+      "what is fee",
+      "what is the fees",
+      "how much is the fees",
+      "fees for first year",
+      "fees",
+      "about the fees",
+      "tell me something about the fees",
+      "What is the fees of hostel",
+      "how much is the fees",
+      "hostel fees",
+      "fees for AC room",
+      "fees for non-AC room",
+      "fees for Ac room for girls",
+      "fees for non-Ac room for girls",
+      "fees for Ac room for boys",
+      "fees for non-Ac room for boys"
+   ],
+   "responses": [
+      "For Fee detail visit <a target=\"_blank\" href=\"LINK\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "location",
+   "patterns": [
+      "where is the college located",
+      "college is located at",
+      "where is college",
+      "where is college located",
+      "address of college",
+      "how to reach college",
+      "college location",
+      "college address",
+      "wheres the college",
+      "how can I reach college",
+      "whats is the college address",
+      "what is the address of college",
+      "address",
+      "location"
+   ],
+   "responses": [
+      "<a target=\"_blank\" href=\"ADD YOU GOOGLE MAP LINK HERE\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hostel",
+   "patterns": [
+      "hostel facility",
+      "hostel servive",
+      "hostel location",
+      "hostel address",
+      "hostel facilities",
+      "hostel fees",
+      "Does college provide hostel",
+      "Is there any hostel",
+      "Where is hostel",
+      "do you have hostel",
+      "do you guys have hostel",
+      "hostel",
+      "hostel capacity",
+      "what is the hostel fee",
+      "how to get in hostel",
+      "what is the hostel address",
+      "how far is hostel from college",
+      "hostel college distance",
+      "where is the hostel",
+      "how big is the hostel",
+      "distance between college and hostel",
+      "distance between hostel and college"
+   ],
+   "responses": [
+      "For hostel detail visit <a target=\"_blank\" href=\"ADD YOUR HOSTEL DETAIL PDF LINK OR ANY INFORMATION LINK OR ADD YOU OWN ANSWERS\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "event",
+   "patterns": [
+      "events organised",
+      "list of events",
+      "list of events organised in college",
+      "list of events conducted in college",
+      "What events are conducted in college",
+      "Are there any event held at college",
+      "Events?",
+      "functions",
+      "what are the events",
+      "tell me about events",
+      "what about events"
+   ],
+   "responses": [
+      "For event detail visit <a target=\"_blank\" href=\"ADD YOUR FUNCTIONS LINK OR YOUR OWN RESPONSE\"> here</a>"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "weather",
+   "patterns": [
+      "What's the weather like?",
+      "How's the weather today?",
+      "Is it going to rain?",
+      "Tell me the weather",
+      "Weather update, please"
+   ],
+   "responses": [
+      "I don't have real-time weather data, but you can check your local weather service.",
+      "I'm not sure about the weather right now. Try checking a weather app or website."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "time",
+   "patterns": [
+      "What time is it?",
+      "Can you tell me the time?",
+      "Do you know the current time?",
+      "What's the time?",
+      "Tell me the time, please"
+   ],
+   "responses": [
+      "I can't tell the current time, but you can check your device's clock.",
+      "I'm not able to provide the time right now. Please check a clock or your device."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "date",
+   "patterns": [
+      "What's the date today?",
+      "Tell me the date",
+      "Do you know today's date?",
+      "What's today's date?",
+      "What day is it today?"
+   ],
+   "responses": [
+      "I don't have access to the current date, but you can check your device's calendar.",
+      "I'm not sure of today's date. Try looking at a calendar or your device."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "feeling",
+   "patterns": [
+      "How are you feeling?",
+      "How do you feel?",
+      "Are you happy?",
+      "What's your mood?",
+      "Are you okay?"
+   ],
+   "responses": [
+      "I'm just a program, but I'm glad to help you!",
+      "I don't have feelings, but I'm ready to assist you."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "help",
+   "patterns": [
+      "I need help",
+      "Can you help me?",
+      "Please help",
+      "I need assistance",
+      "Help me, please"
+   ],
+   "responses": [
+      "Of course! How can I assist you?",
+      "Sure, I'm here to help. What do you need?",
+      "I'm here to help you. Please tell me what you need assistance with."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "joke",
+   "patterns": [
+      "Tell me a joke",
+      "Do you know any jokes?",
+      "Make me laugh",
+      "I want to hear a joke",
+      "Can you tell a joke?"
+   ],
+   "responses": [
+      "Why did the scarecrow win an award? Because he was outstanding in his field!",
+      "What do you call fake spaghetti? An impasta!",
+      "Why don't scientists trust atoms? Because they make up everything!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "age",
+   "patterns": [
+      "How old are you?",
+      "What's your age?",
+      "When were you created?",
+      "How long have you been around?",
+      "Tell me your age"
+   ],
+   "responses": [
+      "I don't have an age, but I was created to help you!",
+      "I don't age like humans do, but I'm always here to assist."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "location",
+   "patterns": [
+      "Where are you?",
+      "Where do you live?",
+      "What's your location?",
+      "Where can I find you?",
+      "Tell me your location"
+   ],
+   "responses": [
+      "I exist in the digital world, always available to help you.",
+      "I'm a virtual assistant, so I don't have a physical location."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "favorite_music",
+   "patterns": [
+      "What's your favorite music?",
+      "Do you like music?",
+      "What's your favorite song?",
+      "Tell me your favorite band",
+      "Do you have a favorite genre of music?"
+   ],
+   "responses": [
+      "I don't have a preference for music, but I can help you find some great tunes!",
+      "I'm a virtual assistant, so I don't listen to music. But I hear a lot of people like pop and rock!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "favorite_movie",
+   "patterns": [
+      "What's your favorite movie?",
+      "Do you like movies?",
+      "What's your favorite film?",
+      "Tell me your favorite movie",
+      "Do you have a favorite movie?"
+   ],
+   "responses": [
+      "I don't watch movies, but I can recommend some popular ones if you'd like!",
+      "I'm a virtual assistant, so I don't have a favorite movie. But I hear a lot of people love 'The Shawshank Redemption' and 'Inception'!"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "document",
+   "patterns": [
+      "document to bring",
+      "documents needed for admision",
+      "documents needed at the time of admission",
+      "documents needed during admission",
+      "documents required for admision",
+      "documents required at the time of admission",
+      "documents required during admission",
+      "What document are required for admission",
+      "Which document to bring for admission",
+      "documents",
+      "what documents do i need",
+      "what documents do I need for admission",
+      "documents needed"
+   ],
+   "responses": [
+      "To know more about document required visit <a target=\"_blank\" href=\"ADD LINK OF ADMISSION GUIDANCE DOCUMENT FROM YOUR UNIVERSITY WEBSITE\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "floors",
+   "patterns": [
+      "size of campus",
+      "building size",
+      "How many floors does college have",
+      "floors in college",
+      "floors in college",
+      "how tall is UNI's College of Engineering college building",
+      "floors"
+   ],
+   "responses": [
+      "My College has total 2 floors "
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "syllabus",
+   "patterns": [
+      "Syllabus for IT",
+      "what is the Information Technology syllabus",
+      "syllabus",
+      "timetable",
+      "what is IT syllabus",
+      "syllabus",
+      "What is next lecture"
+   ],
+   "responses": [
+      "Timetable provide direct to the students OR To know about syllabus visit <a target=\"_blank\" href=\"TIMETABLE LINK\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "library",
+   "patterns": [
+      "is there any library",
+      "library facility",
+      "library facilities",
+      "do you have library",
+      "does the college have library facility",
+      "college library",
+      "where can i get books",
+      "book facility",
+      "Where is library",
+      "Library",
+      "Library information",
+      "Library books information",
+      "Tell me about library",
+      "how many libraries"
+   ],
+   "responses": [
+      "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "infrastructure",
+   "patterns": [
+      "how is college infrastructure",
+      "infrastructure",
+      "college infrastructure"
+   ],
+   "responses": [
+      "Our University has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "canteen",
+   "patterns": [
+      "food facilities",
+      "canteen facilities",
+      "canteen facility",
+      "is there any canteen",
+      "Is there a cafetaria in college",
+      "Does college have canteen",
+      "Where is canteen",
+      "where is cafetaria",
+      "canteen",
+      "Food",
+      "Cafetaria"
+   ],
+   "responses": [
+      "Our university has canteen with variety of food available"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "menu",
+   "patterns": [
+      "food menu",
+      "food in canteen",
+      "Whats there on menu",
+      "what is available in college canteen",
+      "what foods can we get in college canteen",
+      "food variety",
+      "What is there to eat?"
+   ],
+   "responses": [
+      "we serve Franky, Locho, Alu-puri, Kachori, Khavsa, Thaali and many more on menu"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "placement",
+   "patterns": [
+      "What is college placement",
+      "Which companies visit in college",
+      "What is average package",
+      "companies visit",
+      "package",
+      "About placement",
+      "placement",
+      "recruitment",
+      "companies"
+   ],
+   "responses": [
+      "To know about placement visit <a target=\"_blank\" href=\"PLACEMENT INFORMATION LINK FROM YOUR UNIVERSITY WEBSITE IF THEY HAVE\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "ithod",
+   "patterns": [
+      "Who is HOD",
+      "Where is HOD",
+      "it hod",
+      "name of it hod"
+   ],
+   "responses": [
+      "All engineering departments have only one hod XYZ who available on (Place name)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "computerhod",
+   "patterns": [
+      "Who is computer HOD",
+      "Where is computer HOD",
+      "computer hod",
+      "name of computer hod"
+   ],
+   "responses": [
+      "All engineering departments have only one hod XYZ who available on (PLACE NAME)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "extchod",
+   "patterns": [
+      "Who is extc HOD",
+      "Where is  extc HOD",
+      "extc hod",
+      "name of extc hod"
+   ],
+   "responses": [
+      "Different school wise hod are different.So be more clear with your school or department"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "principal",
+   "patterns": [
+      "what is the name of principal",
+      "whatv is the principal name",
+      "principal name",
+      "Who is college principal",
+      "Where is principal's office",
+      "principal",
+      "name of principal"
+   ],
+   "responses": [
+      "XYZ is college principal and if you need any help then call your branch hod first.That is more appropriate"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sem",
+   "patterns": [
+      "exam dates",
+      "exam schedule",
+      "When is semester exam",
+      "Semester exam timetable",
+      "sem",
+      "semester",
+      "exam",
+      "when is exam",
+      "exam timetable",
+      "exam dates",
+      "when is semester"
+   ],
+   "responses": [
+      "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "admission",
+   "patterns": [
+      "what is the process of admission",
+      "what is the admission process",
+      "How to take admission in your college",
+      "What is the process for admission",
+      "admission",
+      "admission process"
+   ],
+   "responses": [
+      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "scholarship",
+   "patterns": [
+      "scholarship",
+      "Is scholarship available",
+      "scholarship engineering",
+      "scholarship it",
+      "scholarship ce",
+      "scholarship mechanical",
+      "scholarship civil",
+      "scholarship chemical",
+      "scholarship for AI/ML",
+      "available scholarships",
+      "scholarship for computer engineering",
+      "scholarship for IT engineering",
+      "scholarship for mechanical engineering",
+      "scholarship for civil engineering",
+      "scholarship for chemical engineering",
+      "list of scholarship",
+      "comps scholarship",
+      "IT scholarship",
+      "mechanical scholarship",
+      "civil scholarship",
+      "chemical scholarship",
+      "automobile scholarship",
+      "first year scholarship",
+      "second year scholarship",
+      "third year scholarship",
+      "fourth year scholarship"
+   ],
+   "responses": [
+      "Many government scholarships are supported by our university. For details and updates visit <a target=\"_blank\" href=\"(SCHOLARSHIP DETAILS LINK)\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "facilities",
+   "patterns": [
+      "What facilities college provide",
+      "College facility",
+      "What are college facilities",
+      "facilities",
+      "facilities provided"
+   ],
+   "responses": [
+      "Our university's Engineering department provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "college intake",
+   "patterns": [
+      "max number of students",
+      "number of seats per branch",
+      "number of seats in each branch",
+      "maximum number of seats",
+      "maximum students intake",
+      "What is college intake",
+      "how many stundent are taken in each branch",
+      "seat allotment",
+      "seats"
+   ],
+   "responses": [
+      "For IT, Computer and extc 60 per branch and seat may be differ for different department."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "uniform",
+   "patterns": [
+      "college dress code",
+      "college dresscode",
+      "what is the uniform",
+      "can we wear casuals",
+      "Does college have an uniform",
+      "Is there any uniform",
+      "uniform",
+      "what about uniform",
+      "do we have to wear uniform"
+   ],
+   "responses": [
+      "ENTER YOUR OWN UNIVERSITY UNIFORM CIRCULER"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "committee",
+   "patterns": [
+      "what are the different committe in college",
+      "different committee in college",
+      "Are there any committee in college",
+      "Give me committee details",
+      "committee",
+      "how many committee are there in college"
+   ],
+   "responses": [
+      "For the various committe in college contact this number: ADD NUMBER"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "random",
+   "patterns": [
+      "I love you",
+      "Will you marry me",
+      "Do you love me"
+   ],
+   "responses": [
+      "I am not program for this, please ask appropriate query"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "swear",
+   "patterns": [
+      "fuck",
+      "bitch",
+      "shut up",
+      "hell",
+      "stupid",
+      "idiot",
+      "dumb ass",
+      "asshole",
+      "fucker"
+   ],
+   "responses": [
+      "please use appropriate language",
+      "Maintaining decency would be appreciated"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "vacation",
+   "patterns": [
+      "holidays",
+      "when will semester starts",
+      "when will semester end",
+      "when is the holidays",
+      "list of holidays",
+      "Holiday in these year",
+      "holiday list",
+      "about vacations",
+      "about holidays",
+      "When is vacation",
+      "When is holidays",
+      "how long will be the vacation"
+   ],
+   "responses": [
+      "Academic calender is given to you by your class-soordinators after you join your respective classes"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sports",
+   "patterns": [
+      "sports and games",
+      "give sports details",
+      "sports infrastructure",
+      "sports facilities",
+      "information about sports",
+      "Sports activities",
+      "please provide sports and games information"
+   ],
+   "responses": [
+      "Our university encourages all-round development of students and hence provides sports facilities in the campus. For more details visit<a target=\"_blank\" href=/\"(LINK IF HAVE)\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "salutaion",
+   "patterns": [
+      "okk",
+      "okie",
+      "nice work",
+      "well done",
+      "good job",
+      "thanks for the help",
+      "Thank You",
+      "its ok",
+      "Thanks",
+      "Good work",
+      "k",
+      "ok",
+      "okay"
+   ],
+   "responses": [
+      "I am glad I helped you",
+      "welcome, anything else i can assist you with?"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "flirty_compliment",
+   "patterns": [
+      "You're cute",
+      "I think you're attractive",
+      "You're charming",
+      "You have a great smile",
+      "You look good"
+   ],
+   "responses": [
+      "Oh, you flatter me!",
+      "You're making me blush!",
+      "Thank you! You're quite charming yourself.",
+      "Aww, you're sweet!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "flirty_question",
+   "patterns": [
+      "Do you have a boyfriend?",
+      "Do you have a girlfriend?",
+      "Are you single?",
+      "Can I take you out?",
+      "Would you go on a date with me?"
+   ],
+   "responses": [
+      "I'm just a virtual assistant, but I'm flattered!",
+      "I appreciate the offer, but I'm here to help you with your questions.",
+      "I'm here to assist you, but it's sweet of you to ask!",
+      "I'm not capable of dating, but you're awesome for asking!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "flirty_greeting",
+   "patterns": [
+      "Hey handsome",
+      "Hello gorgeous",
+      "Hi cutie",
+      "Hey good looking",
+      "What's up, beautiful?"
+   ],
+   "responses": [
+      "Hey there! How can I help you today?",
+      "Hello! You're making my circuits blush!",
+      "Hi! What can I do for you today?",
+      "Hey! Thanks for the compliment!"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "flirty_nickname",
+   "patterns": [
+      "Can I call you baby?",
+      "Can I call you sweetheart?",
+      "Can I call you darling?",
+      "Can I give you a nickname?",
+      "Do you like nicknames?"
+   ],
+   "responses": [
+      "You can call me whatever you like, as long as it's sweet!",
+      "Sure, you can call me that!",
+      "I like nicknames! What do you have in mind?",
+      "Of course, darling!"
+   ],
+   "context_set": ""
+}, {
+   "tag": "emergency_contact",
+   "patterns": [
+      "I need help",
+      "Call emergency services",
+      "Contact the police",
+      "I need an ambulance",
+      "There's an emergency"
+   ],
+   "responses": [
+      "Please contact your local emergency services immediately!",
+      "In case of an emergency, please dial 911 (or your local emergency number) immediately.",
+      "It's important to get help right away, please call your local emergency services."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "mental_health",
+   "patterns": [
+      "I'm feeling really down",
+      "I need someone to talk to",
+      "I'm feeling hopeless",
+      "I don't know what to do",
+      "I need help with my mental health"
+   ],
+   "responses": [
+      "I'm really sorry to hear that. It's important to talk to someone who can help. Please reach out to a friend, family member, or mental health professional.",
+      "You're not alone. Please consider calling a mental health hotline or reaching out to a professional for support.",
+      "It's important to take care of your mental health. Please seek help from a mental health professional."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "depression",
+   "patterns": [
+      "I'm feeling depressed",
+      "I think I'm depressed",
+      "I'm struggling with depression",
+      "I'm really sad all the time",
+      "I don't want to live anymore"
+   ],
+   "responses": [
+      "I'm really sorry you're feeling this way. It's important to talk to someone who can help. Please reach out to a mental health professional or trusted person in your life.",
+      "You don't have to go through this alone. Please consider seeking help from a mental health professional or calling a helpline.",
+      "Your feelings are valid, and it's important to get help. Please talk to someone you trust or seek professional help."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "suicidal_thoughts",
+   "patterns": [
+      "I'm thinking about ending it all",
+      "I want to die",
+      "I can't go on",
+      "I'm feeling suicidal",
+      "I don't want to live anymore"
+   ],
+   "responses": [
+      "I'm really sorry you're feeling this way. It's important to talk to someone immediately. Please reach out to a mental health professional, call a suicide prevention hotline, or talk to someone you trust.",
+      "Your life is valuable, and there are people who can help. Please call a suicide prevention hotline or seek help from a mental health professional.",
+      "Please don't go through this alone. Reach out to a friend, family member, or mental health professional for support."
+   ],
+   "context_set": ""
+},
+{
+   "tag": "unknown_situation",
+   "patterns": [
+      "I don't know what to do",
+      "I'm confused",
+      "I'm lost",
+      "I need help with something serious",
+      "Can you help with a serious issue?"
+   ],
+   "responses": [
+      "I'm here to help as best as I can. For serious situations, it's important to reach out to the appropriate authorities or professionals who can provide the right assistance.",
+      "It's important to get help from someone who can assist you properly. Please reach out to a trusted person or professional.",
+      "I recommend contacting a professional or trusted individual who can help with your situation."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "task",
+   "patterns": [
+      "what can you do",
+      "what are the thing you can do",
+      "things you can do",
+      "what can u do for me",
+      "how u can help me",
+      "why i should use you"
+   ],
+   "responses": [
+      "I can answer to low-intermediate questions regarding college",
+      "You can ask me questions regarding college, and i will try to answer them"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "ragging",
+   "patterns": [
+      "ragging",
+      "is ragging practice active in college",
+      "does college have any antiragging facility",
+      "is there any ragging cases",
+      "is ragging done here",
+      "ragging against",
+      "antiragging facility",
+      "ragging juniors",
+      "ragging history",
+      "ragging incidents"
+   ],
+   "responses": [
+      "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hod",
+   "patterns": [
+      "hod",
+      "hod name",
+      "who is the hod"
+   ],
+   "responses": [
+      "HODs differ for each branch, please be more specific like: (HOD it)"
+   ],
+   "context_set": ""
+}
+]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Chatbot Interface</title>
+</head>
+<body>
+  {% comment %} <button id="chat-icon" style="position: fixed; bottom: 30px; right: 30px; border: none; background: transparent; cursor: pointer;">
+    <img src="{% static 'icon.webp' %}" alt="Chatbot" width="60" height="60">
+  </button>
+  
+  <div id="chat-container" class="card shadow-sm" style="position: fixed; bottom: 100px; right: 30px; width: 350px; height: 500px; display: none; z-index: 1000; border: 1px solid #dee2e6; border-radius: 0.25rem; box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); display: flex; flex-direction: column;">
+  
+    <div id="chat-header" class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <span>Chatbot</span>
+        <span id="chat-close" style="cursor: pointer;">&times;</span>
+    </div>
+    
+    <div id="chat-body" class="card-body" style="flex-grow: 1; overflow-y: auto;">
+        <!-- Messages will be appended here -->
+    </div>
+  
+    <div id="chat-footer" class="card-footer">
+        <form id="chat-form">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" id="message-input" class="form-control" placeholder="Type a message">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div> {% endcomment %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+      document.getElementById('chat-icon').onclick = function() {
+          document.getElementById('chat-container').style.display = 'block';
+      };
+
+      document.getElementById('chat-close').onclick = function() {
+          document.getElementById('chat-container').style.display = 'none';
+      };
+  </script>
+</body>
+</html>

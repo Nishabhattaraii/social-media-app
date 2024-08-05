@@ -11,7 +11,7 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.user.username}-{self.text[:10]}'
+        return f'{self.user.username}'
     
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -19,7 +19,7 @@ class Like(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.user.username} likes {self.post.text[:10]}'
+        return f'{self.user.username} likes {self.post.text}'
 
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -29,4 +29,4 @@ class Comment(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.user.username} commented on {self.post.text[:10]}'
+        return f'{self.user.username} commented on {self.post.text}'

@@ -11,16 +11,15 @@
 <h1>Welcome to the project</h1>
 <div class="createbtn">
   <input class="text-area" type="textarea" placeholder="Whats in your mind?" disabled/>
-<a class="btn btn-primary postbtn" href="{% url 'post_create' %}">Create a post</a>
+  <a class="btn btn-primary postbtn" href="{% url 'post_create' %}">Create a post</a>
 </div>
 <div class="container">
   {% for post in posts %}
-    <div class="card" >
+    <div class="card">
         {% if post.photo %}
-           
+          <img src="{{ post.photo.url }}" class="card-img-top" alt="...">
         {% endif %}
         <div class="card-body">
-          <img src="{{ post.photo.url }}" class="card-img-top" alt="...">
           <h5 class="card-title">{{ post.user.username }}</h5>
           <p class="card-text">{{ post.text }}</p>
           <p>Likes: {{ post.likes.count }}</p>
@@ -49,4 +48,77 @@
       </div>
   {% endfor %}
 </div>
+
+<!-- Chatbot Icon Button -->
+<button id="chat-icon" style="position: fixed; bottom: 30px; right: 30px; border: none; background: transparent; cursor: pointer;">
+  <img src="{% static 'icon.webp' %}" alt="Chatbot" width="60" height="60">
+</button>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+  document.getElementById('chat-icon').addEventListener('click', function() {
+    if (!document.getElementById('chat-container')) {
+      var chatContainerHTML = `
+        <div id="chat-container" class="card shadow-sm" style="position: fixed; bottom: 100px; right: 30px; width: 350px; height: 500px; display: flex; flex-direction: column; z-index: 1000; border: 1px solid #dee2e6; border-radius: 0.25rem; box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);">
+
+    <div id="chat-header" class="card-header bg-primary text-white d-flex justify-content-between align-items-center" style="height: 60px;">
+        <span>Chatbot</span>
+        <span id="chat-close" style="cursor: pointer;">&times;</span>
+    </div>
+    
+    <div id="chat-body" class="card-body" style="flex: 1; overflow-y: auto; height: 350px;">
+        <!-- Messages will be appended here -->
+    </div>
+
+    <div id="chat-footer" class="card-footer" style="height: 90px;">
+        <form id="chat-form">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" id="message-input" class="form-control" placeholder="Type a message" style="height: 38px;">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary" style="height: 38px;">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+      `;
+
+      $('body').append(chatContainerHTML);
+
+      document.getElementById('chat-close').addEventListener('click', function() {
+        document.getElementById('chat-container').style.display = 'none';
+      });
+
+      $(document).ready(function() {
+        $('#chat-form').on('submit', function(event) {
+          event.preventDefault();
+          var messageInput = $('#message-input');
+          var message = messageInput.val();
+
+          if (message) {
+            $.ajax({
+              type: 'POST',
+              url: '{% url "chatbot" %}',
+              data: {
+                'message': message,
+                'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val()
+              },
+              success: function(response) {
+                var chatBody = $('#chat-body');
+                chatBody.append('<div class="message user-message"><strong>You:</strong> ' + response.user_message + '</div>');
+                chatBody.append('<div class="message bot-message"><strong>Bot:</strong> ' + response.bot_response + '</div>');
+                messageInput.val('');
+                chatBody.scrollTop(chatBody[0].scrollHeight);
+              }
+            });
+          }
+        });
+      });
+    }
+    document.getElementById('chat-container').style.display = 'block';
+  });
+</script>
+
 {% endblock %}

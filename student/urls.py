@@ -12,4 +12,5 @@ urlpatterns = [
     path('<int:post_id>/like/', views.like_post, name='like_post'),
     path('<int:post_id>/comment/', views.add_comment, name='add_comment'),
     path('logout/', views.logout_view, name='logout'),
+    path('chatbot/',views.chatbot_view, name='chatbot')
 ]
